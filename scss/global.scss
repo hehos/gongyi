@@ -209,7 +209,7 @@ ul, li {
 }
 
 .logo {
-  width: 185px;
+  width: 160px;
   float: left;
 }
 
@@ -673,17 +673,45 @@ ul, li {
   font-size: 14px;
 }
 
+
+/* custom */
+
 .container {
   width: 996px;
   margin: 0 auto;
 }
 
+img { max-width: 100%; }
+
 .index-title {
-  background-color: #ddd;
+  background-color: #ebebeb;
   line-height: 33px;
   padding: 0 20px;
   color: #029ae6;
   font-weight: bold;
   font-size: 1.2em;
   a { color: inherit; }
+}
+
+.slider-box {
+  position: relative;
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    font-size: 60px;
+    width: .5em;
+    line-height: 1;
+    margin-top: -30px;
+    text-align: center;
+  }
+  .prev-btn {
+    left: 10px;
+  }
+  .next-btn {
+    right: 10px;
+  }
+  .slider-main {
+    padding: 0 50px;
+  }
 }

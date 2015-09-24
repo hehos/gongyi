@@ -666,24 +666,86 @@
   top: 76px;
 }
 
+/* custom */
+table {
+  width: 100%;
+}
+table th, table td {
+  text-align: center;
+}
+
 .home_center {
+  background-color: #f1f1f1;
+}
+.home_center .container {
   position: relative;
   top: -30px;
+}
+.home_center .index-box {
+  margin-bottom: 15px;
+  background-color: #fff;
 }
 
 .index-banner {
   position: relative;
   width: 100%;
   height: 500px;
-  background: url("../images/banner-bg.jpg") no-repeat;
-  background-size: 100%;
+  overflow: hidden;
+}
+.index-banner img {
+  width: 100%;
+}
+.index-banner .slider-box .prev-btn, .index-banner .slider-box .next-btn {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+.banner-slider {
+  position: relative;
+}
+.banner-slider, .banner-slider .slider-items {
+  height: 100%;
+}
+.banner-slider .slider-items {
+  position: relative;
+}
+.banner-slider .slider-items:before, .banner-slider .slider-items:after {
+  content: " ";
+  display: table;
+}
+.banner-slider .slider-items:after {
+  clear: both;
+}
+.banner-slider .slider-items li {
+  float: left;
+  overflow: hidden;
+}
+.banner-slider .point-ctrs {
+  position: absolute;
+  bottom: 80px;
+  right: 100px;
+  height: 32px;
+  padding: 10px 4px;
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.banner-slider .point-ctrs i {
+  display: inline-block;
+  width: 24px;
+  height: 12px;
+  margin: 0 8px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.banner-slider .point-ctrs i.on {
+  background-color: #36b6fd;
 }
 
 .form-box {
   position: absolute;
   width: 300px;
   top: 80px;
-  right: 100px;
+  left: 100px;
   padding: 20px;
   background-color: #ffffff;
 }
@@ -707,7 +769,7 @@
   padding: 6px;
 }
 .form-box .submit-line {
-  margin-top: 15px;
+  margin-top: 25px;
 }
 .form-box .submit-line [type=submit] {
   font-size: 1.2em;
@@ -725,6 +787,9 @@
   border: 1px solid #ddd;
 }
 
+.xiangmu-list {
+  margin-right: -2%;
+}
 .xiangmu-list:before, .xiangmu-list:after {
   content: " ";
   display: table;
@@ -734,8 +799,8 @@
 }
 .xiangmu-list li {
   float: left;
-  width: 25%;
-  padding: 0 18px;
+  width: 23%;
+  margin-right: 2%;
 }
 .xiangmu-list h4 {
   padding: 10px 4px;
@@ -753,7 +818,6 @@
 }
 
 .juanzheng-line {
-  margin-top: 20px;
   line-height: 25px;
 }
 .juanzheng-line:before, .juanzheng-line:after {
@@ -772,11 +836,91 @@
 .juanzheng-line .zx-zhixun {
   width: 490px;
 }
+.juanzheng-line .zx-zhixun ul {
+  list-style-position: inside;
+}
 .juanzheng-line .zx-zhixun li {
-  list-style: square;
-  margin-left: 25px;
+  list-style-type: square;
+  line-height: 28px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .juanzheng-line .jz-shouru {
   width: 230px;
   margin-left: 30px;
+}
+
+.other-line:before, .other-line:after {
+  content: " ";
+  display: table;
+}
+.other-line:after {
+  clear: both;
+}
+.other-line .huoban, .other-line .guanyu {
+  float: left;
+}
+.other-line .huoban {
+  width: 63.66%;
+  margin-right: 3%;
+}
+.other-line .guanyu {
+  width: 33.33333%;
+  margin-left: 0;
+}
+.other-line .tab-title {
+  border-bottom: 1px solid #0499D0;
+  background-color: #ededed;
+}
+.other-line .tab-title ul:before, .other-line .tab-title ul:after {
+  content: " ";
+  display: table;
+}
+.other-line .tab-title ul:after {
+  clear: both;
+}
+.other-line .tab-title li {
+  float: left;
+  line-height: 33px;
+  padding: 0 15px;
+  margin-right: 5px;
+  margin-bottom: -1px;
+  border: 1px solid transparent;
+  font-weight: bold;
+  font-family: "microsoft yahei";
+}
+.other-line .tab-title li:hover, .other-line .tab-title li.on {
+  border: 1px solid #0499D0;
+  border-bottom-color: transparent;
+  background-color: #fff;
+}
+
+.huoban .slider-box .prev-btn, .huoban .slider-box .next-btn {
+  font-size: 40px;
+  margin-top: -20px;
+}
+.huoban .slider-box .slider-main {
+  padding: 0 40px;
+}
+.huoban .cont {
+  padding: 10px 0;
+}
+.huoban .cont ul {
+  margin-right: -2%;
+}
+.huoban .cont ul:before, .huoban .cont ul:after {
+  content: " ";
+  display: table;
+}
+.huoban .cont ul:after {
+  clear: both;
+}
+.huoban .cont li {
+  float: left;
+  width: 18%;
+  margin-right: 2%;
+}
+.huoban .cont img {
+  width: 100%;
 }

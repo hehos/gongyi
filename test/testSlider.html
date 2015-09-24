@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script type="text/javascript" src="../js/slidr.min.js"></script>
+</head>
+<body>
+
+<div id="slidr-img" style="display: inline-block">
+    <img data-slidr="one" src="http://img13.360buyimg.com/da/jfs/t2317/58/337529478/103380/a09b4837/5600f845N8dcd2889.jpg"/>
+    <img data-slidr="two" src="http://img10.360buyimg.com/da/jfs/t2317/311/375519214/101633/399d90b8/5604c4f1Neecf242e.jpg"/>
+    <img data-slidr="three" src="http://img10.360buyimg.com/da/jfs/t1321/335/1370408080/101280/8dd14620/5604c4daNc0bc012b.jpg"/>
+</div>
+
+
+<script>
+
+    slidr.create('slidr-img', {
+        touch: true,
+        pause: true,
+        breadcrumbs: true,
+        fade: true,
+        pause: true
+    }).start();
+
+
+</script>
+</body>
+</html>
