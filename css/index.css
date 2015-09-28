@@ -696,6 +696,7 @@ table th, table td {
   width: 100%;
 }
 .index-banner .slider-box .prev-btn, .index-banner .slider-box .next-btn {
+  display: none;
   background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
 }
@@ -739,6 +740,14 @@ table th, table td {
 }
 .banner-slider .point-ctrs i.on {
   background-color: #36b6fd;
+}
+
+.slider-items:before, .slider-items:after {
+  content: " ";
+  display: table;
+}
+.slider-items:after {
+  clear: both;
 }
 
 .form-box {

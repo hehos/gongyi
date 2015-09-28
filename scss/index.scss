@@ -708,6 +708,7 @@ table {
   }
   .slider-box {
     .prev-btn, .next-btn {
+      display: none;
       background-color: rgba(0, 0, 0, .6);
       color: #fff;
     }
@@ -747,6 +748,13 @@ table {
       }
     }
   }
+}
+
+
+.slider-items {
+  @include clearfix();
+}
+.slider-item {
 }
 
 

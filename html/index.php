@@ -15,13 +15,20 @@
 
 
 <div class="index-banner">
-    <div class="banner-slider slider-box" id="focus">
+    <div class="banner-slider slider-box" id="banner-slider">
         <ul class="slider-items">
-            <li><a href=""><img src="../images/banner1.jpg" alt=""/></a></li>
-            <li><a href=""><img src="../images/banner2.jpg" alt=""/></a></li>
-            <li><a href=""><img src="../images/banner3.jpg" alt=""/></a></li>
+            <li class="slider-item"><a href=""><img src="../images/banner1.jpg" alt=""/></a></li>
+            <li class="slider-item"><a href=""><img src="../images/banner2.jpg" alt=""/></a></li>
+            <li class="slider-item"><a href=""><img src="../images/banner3.jpg" alt=""/></a></li>
         </ul>
     </div>
+
+    <script>
+        $(document).ready(function(){
+            var banner = new Slider("banner-slider");
+            banner.run();
+        });
+    </script>
 
     <div class="form-box">
         <h3>请登录</h3>
@@ -49,32 +56,57 @@
             <div class="index-title">
                 <h3>我的项目</h3>
             </div>
-            <div class="xiangmu-cont slider-box">
-                <span class="prev-btn"><i class="icon-angle-left"></i></span>
-                <span class="next-btn"><i class="icon-angle-right"></i></span>
-
-                <div class="slider-main">
-                    <ul class="xiangmu-list">
-                        <li>
-                            <a href=""><img src="../images/list-img1.jpg" alt=""/></a>
-                            <h4><a href="">海洋 天堂</a></h4>
-                        </li>
-                        <li>
-                            <a href=""><img src="../images/list-img2.jpg" alt=""/></a>
-                            <h4><a href="">海洋 天堂</a></h4>
-                        </li>
-                        <li>
-                            <a href=""><img src="../images/list-img3.jpg" alt=""/></a>
-                            <h4><a href="">海洋 天堂</a></h4>
-                        </li>
-                        <li>
-                            <a href=""><img src="../images/list-img3.jpg" alt=""/></a>
-                            <h4><a href="">海洋 天堂</a></h4>
-                        </li>
-                    </ul>
-                </div>
+            <div class="xiangmu-cont slider-box" id="slider2">
+                <ul class="slider-items">
+                    <li class="slider-main slider-item">
+                        <ul class="xiangmu-list">
+                            <li>
+                                <a href=""><img src="../images/list-img1.jpg" alt=""/></a>
+                                <h4><a href="">海洋 天堂</a></h4>
+                            </li>
+                            <li>
+                                <a href=""><img src="../images/list-img2.jpg" alt=""/></a>
+                                <h4><a href="">海洋 天堂</a></h4>
+                            </li>
+                            <li>
+                                <a href=""><img src="../images/list-img3.jpg" alt=""/></a>
+                                <h4><a href="">海洋 天堂</a></h4>
+                            </li>
+                            <li>
+                                <a href=""><img src="../images/list-img3.jpg" alt=""/></a>
+                                <h4><a href="">海洋 天堂</a></h4>
+                            </li>
+                        </ul>
+                    </li>
+<!--                    <li class="slider-main slider-item">-->
+<!--                        <ul class="xiangmu-list">-->
+<!--                            <li>-->
+<!--                                <a href=""><img src="../images/list-img1.jpg" alt=""/></a>-->
+<!--                                <h4><a href="">海洋 天堂</a></h4>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href=""><img src="../images/list-img2.jpg" alt=""/></a>-->
+<!--                                <h4><a href="">海洋 天堂</a></h4>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href=""><img src="../images/list-img3.jpg" alt=""/></a>-->
+<!--                                <h4><a href="">海洋 天堂</a></h4>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href=""><img src="../images/list-img3.jpg" alt=""/></a>-->
+<!--                                <h4><a href="">海洋 天堂</a></h4>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+                </ul>
             </div>
         </div>
+        <script>
+            $(document).ready(function(){
+//                var banner = new Slider("slider2");
+//                banner.run();
+            });
+        </script>
 
         <div class="juanzheng-line">
             <div class="zx-zhixun index-border index-box">
@@ -249,8 +281,8 @@
                     <ul class="c_3_tab_list" id="tx2">
                         <li class="sx"
                             style="height: auto; position: relative; z-index: 5; margin-top: -16px; padding-left: 9px; padding-right: 24px; padding-top: 20px;">
-                            <iframe frameborder="0" scrolling="no" src="#" width="100%" height="420" id="ifrmid"
-                                    name="wbqq"></iframe>
+<!--                            <iframe frameborder="0" scrolling="no" src="#" width="100%" height="420" id="ifrmid"-->
+<!--                                    name="wbqq"></iframe>-->
                         </li>
                     </ul>
                     <ul class="c_3_tab_list" id="tx4" style="display:none;margin-left:15px;">
